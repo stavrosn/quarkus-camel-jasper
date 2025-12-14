@@ -1,0 +1,44 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e409fea2-bdcc-40ed-a665-be96fd66e214">
+	<parameter name="SomeName" class="java.lang.String"/>
+	<query language="csv"><![CDATA[]]></query>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="Code" class="java.lang.String"/>
+	<field name="AMKA" class="java.lang.Long"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="FirstName" class="java.lang.String"/>
+	<field name="LastName" class="java.lang.String"/>
+	<field name="FatherName" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="50" splitType="Stretch">
+		<element kind="staticText" uuid="f462b4da-f469-49d3-b7d4-2ab590e27460" x="0" y="0" width="555" height="50">
+			<text><![CDATA[Customer Report]]></text>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</title>
+	<pageHeader height="39" splitType="Stretch">
+		<element kind="textField" uuid="c5d597fc-48e7-47cc-8294-205e10d5e948" x="0" y="0" width="555" height="39">
+			<expression><![CDATA[$P{SomeName}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+	</pageHeader>
+	<columnHeader height="40" splitType="Stretch">
+		<element kind="staticText" uuid="5ced145d-63f5-4b5d-ad69-b4dcba99c2ad" x="0" y="0" width="80" height="30">
+			<text><![CDATA[id]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc6bff54-33d8-4733-b833-5d14e778616a"/>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<element kind="textField" uuid="78771ec8-ee1a-45b6-b104-ff5048d08c3e" x="0" y="10" width="80" height="30">
+				<expression><![CDATA[$F{id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc6bff54-33d8-4733-b833-5d14e778616a"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
